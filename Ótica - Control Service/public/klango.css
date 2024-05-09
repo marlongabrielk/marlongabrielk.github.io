@@ -1,0 +1,25 @@
+body {
+    margin-top: 3%;
+}
+
+/*Dispositivos pequenos*/
+@media only screen and (max-width: 500px) {
+    .principal {
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+}
+
+/*Dispositivos Medios*/
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .principal {
+        width: 60%;
+    }
+}
+
+/*Dispositios Grandes*/
+@media only screen and (min-width: 1025px) {
+    .principal {
+        width: 70%;
+    }
+}

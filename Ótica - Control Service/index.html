@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Óticas - Control Service</title>
+    <link rel="stylesheet" href="lib/boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/flatpick/css/flatpickr.min.css">
+    <link rel="stylesheet" href="public/klango.css">
+</head>
+<body>
+  
+<header>
+        
+</header>
+
+<main class="container">
+        <div class="row justify-content-center">
+        <div class="col-md-8">
+        <div class="card">
+        <div class="card-body">
+    <form id="validades" action="src/config.php" method="post">
+        <div class="form-group">
+            <label for="prazo">Prazo de Entrega:</label>
+            <input type="date" id="prazo" name="prazo" class="form-control" placeholder="Selecione a data">
+        </div>
+                            
+        <div class="form-group">
+            <label for="vendedor">Consultora:</label>
+            <select id="vendedor" name="vendedor" class="form-control">
+        <option value="" disabled selected>Selecione a consultora</option>
+        <option value="vendedor1">Consultura 01</option>
+        <option value="vendedor2">Consultura 02</option>
+        <option value="vendedor4">Consultura 03</option>
+        <option value="vendedor5">Consultura 04</option>
+        <option value="vendedor6">Consultura 05</option>
+            </select>
+        </div>
+
+        <div class="row">
+        <div class="col-md-6">
+        <div class="form-group">
+            <label for="armacao">Armação:</label>
+            <select id="armacao" name="armacao" class="form-control">
+        <option value="" disabled selected>Selecione o tipo de armação</option>
+        <option value="acetato">Acetato</option>
+        <option value="metal">Metal</option>
+        <option value="fiodenylon">Nylon</option>
+            </select>
+        </div>
+        </div>
+                                
+        <div class="col-md-6">
+        <div class="form-group">
+            <label for="lente">Lente:</label>
+            <select id="lente" name="lente" class="form-control">
+        <option value="" disabled selected>Selecione o tipo de lente:</option>
+        <option value="visaosimples">Visão Simples</option>
+        <option value="multifocal">Multifocal</option>
+        <option value="bifocal">Bifocal</option>
+            </select>
+        </div>
+        </div>
+        </div>
+
+        <div class="form-group">
+            <label for="observacoes">Observações:</label>
+            <textarea id="observacoes" name="observacoes" rows="3" class="form-control"></textarea>
+        </div>
+
+            <button type="submit" class="btn btn-danger">Enviar</button>
+    </form>
+        </div>
+        </div>
+        </div>
+        </div>
+        
+</main>
+
+<footer class="footer mt-auto py-2">
+        <div class="container text-center">
+            <span class="text-muted">© 2024 <a href="https://instagram.com/klango.soft">Klango - Soft</a>. Todos os direitos reservados.</span>
+        </div>
+</footer>
+
+    <script src="lib/boostrap/js/jquery-3.6.0.min.js"></script>
+    <script src="lib/boostrap/js/jquery.validate.min.js"></script>
+    <script src="lib/boostrap/js/popper.min.js"></script>
+    <script src="lib/boostrap/js/bootstrap.min.js"></script>
+    <script src="lib/boostrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/flatpick/js/flatpickr.js"></script>
+    <script src="lib/flatpick/js/pt.js"></script>
+    <script src="public/klango.js"></script>
+
+</body>
+</html>
