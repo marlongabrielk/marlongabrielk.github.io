@@ -1,0 +1,190 @@
+/* Corpo */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bahnschrift', sans-serif;
+}
+
+/* Estilo de link */
+a {
+    text-decoration: none;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #4fd700;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo-redonda {
+    width: 10%;
+    max-width: 15%;
+}
+
+/* Menu Superior */
+.menu-superior {
+    height: 3.75rem;
+    background-color: #45bc00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+/* Links do menu */
+.menu-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-links a {
+    font-weight: 600;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.menu-links a:hover {
+    color: rgb(17, 94, 17);
+}
+
+/* Banners */
+.primeiro-banner {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0.5rem 0 0.5rem;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    display: none;
+    object-fit: cover;
+}
+
+.banner-img.ativar {
+    display: block;
+    animation: fade 1.4s ease-in-out;
+}
+
+/* Novidades */
+.novidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+/* Estilo dos cards de novidades */
+.novidade-card {
+    width: 250px;
+    padding: 50px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0 10px;
+    background-color: #f9f9f9;
+}
+
+/* Conteúdo */
+.oculos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+/* Estilo dos cards de óculos */
+.oculos-card {
+    width: 250px;
+    padding: 50px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0 10px;
+    background-color: #f9f9f9;
+}
+
+/* Botão "Saiba Mais" */
+.saiba-mais-btn {
+    display: inline-block;
+    background-color: #45bc00;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.saiba-mais-btn:hover {
+    background-color:  rgb(17, 94, 17);
+}
+
+/* Conteúdo */
+.contato {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Formulário de Contato */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #45bc00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(17, 94, 17);
+}
+
+/* Rodapé */
+footer {
+    background-color: #45bc00;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+/* Animação de fade */
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 0.5; }
+}
+
+/* Fonte personalizada */
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('fonte.TTF') format('ttf'),
+}
